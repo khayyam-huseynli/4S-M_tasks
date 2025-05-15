@@ -1,6 +1,6 @@
-# Bina.az Mənzil Məlumatları Scraper
+# Web Scraper (Selenium)
 
-Bu layihə, Bina.az saytından satılıq mənzillərin məlumatlarını avtomatik olaraq toplayır və CSV faylına ixrac edir. Selenium və Python istifadə edərək, mənzillərin qiyməti, məkanı, otaq sayı, sahəsi və digər məlumatlarını çəkmək üçün nəzərdə tutulmuşdur.
+Bu layihə, Bina.az saytından satılıq mənzillərin məlumatlarını avtomatik olaraq toplayır və CSV faylına ixrac edir. Selenium və Python istifadə edərək, mənzillərin qiyməti, ünvanı, otaq sayı, sahəsi və digər məlumatlarını çəkmək üçün nəzərdə tutulmuşdur.
 
 ## Xüsusiyyətlər
 
@@ -8,9 +8,9 @@ Bu layihə, Bina.az saytından satılıq mənzillərin məlumatlarını avtomati
 - Çoxsəhifəli scraping imkanı
 - Toplanan məlumatlar:
   - Qiymət
-  - Məkan (rayon/şəhər)
+  - Ünvan (rayon/şəhər)
   - Otaq sayı
-  - Sahə (m²)
+  - Sahə (m² və ya sot)
   - Mərtəbə
   - Elanın tarixi
   - Elanın linki
@@ -49,12 +49,6 @@ Layihədə tələb olunan paketləri requirements.txt faylından quraşdıra bil
 
 ```bash
 pip install -r requirements.txt
-```
-
-Və ya əl ilə quraşdıra bilərsiniz:
-
-```bash
-pip install pandas selenium webdriver-manager
 ```
 
 ### 3. Chrome brauzerin quraşdırılması
@@ -136,7 +130,7 @@ Həll: HTML elementləri tapıla bilmir. Saytın strukturu dəyişmiş ola bilə
 
 ## Lisenziya
 
-Bu layihə MIT lisenziyası altında yayımlanmışdır. Daha ətraflı məlumat üçün LICENSE faylına baxın.
+Bu layihə MIT lisenziyası altında yayımlanmışdır.
 
 ## Təşəkkürlər
 
